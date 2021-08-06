@@ -36,8 +36,8 @@ modules:
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/moserial/3.0/moserial-3.0.9.tar.xz
-        sha256: 6bba85ae6367d9ecfe6a72af9fc354b3ce840ac42ad6e4dcb18b01088fc874cd
+        url: https://download.gnome.org/sources/moserial/3.0/moserial-3.0.20.tar.xz
+        sha256: dd180bc027c2858706780c806f7af99a256c83ecc298fb6a5eb0ce3979f1fa92
         x-checker-data:
           type: gnome
           name: moserial
