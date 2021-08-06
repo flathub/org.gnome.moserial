@@ -24,16 +24,24 @@ modules:
       - type: archive
         url: https://www.ohse.de/uwe/releases/lrzsz-0.12.20.tar.gz
         sha256: c28b36b14bddb014d9e9c97c52459852f97bd405f89113f30bee45ed92728ff1
+        x-checker-data:
+          type: anitya
+          project-id: 21824
+          stable-only: true
+          url-template: https://www.ohse.de/uwe/releases/lrzsz-$version.tar.gz
     cleanup:
       - /share/man
       - /man
   - name: moserial
     buildsystem: autotools
     sources:
-      - type: git
-        url: https://gitlab.gnome.org/GNOME/moserial.git
-        tag: moserial_3_0_20
-        commit: ad0900dfb282dd982439ec5749f2f38df778f4b0
+      - type: archive
+        url: https://download.gnome.org/sources/moserial/3.0/moserial-3.0.20.tar.xz
+        sha256: dd180bc027c2858706780c806f7af99a256c83ecc298fb6a5eb0ce3979f1fa92
+        x-checker-data:
+          type: gnome
+          name: moserial
+          stable-only: true
     post-install:
       - install -Dm644 -T /app/share/applications/moserial.desktop /app/share/applications/org.gnome.moserial.desktop
       - sed -i 's/Icon=moserial/Icon=org.gnome.moserial/' /app/share/applications/org.gnome.moserial.desktop
