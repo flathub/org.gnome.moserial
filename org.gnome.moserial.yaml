@@ -1,6 +1,6 @@
 id: org.gnome.moserial
 runtime: org.gnome.Platform
-runtime-version: "41"
+runtime-version: '41'
 sdk: org.gnome.Sdk
 command: moserial
 finish-args:
@@ -31,8 +31,8 @@ modules:
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/moserial/3.0/moserial-3.0.20.tar.xz
-        sha256: dd180bc027c2858706780c806f7af99a256c83ecc298fb6a5eb0ce3979f1fa92
+        url: https://download.gnome.org/sources/moserial/3.0/moserial-3.0.21.tar.xz
+        sha256: 788b29f256502b83536116c90795383961b26338a04d32c8ed35e53da4284aad
         x-checker-data:
           type: gnome
           name: moserial
