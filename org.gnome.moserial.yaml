@@ -74,5 +74,5 @@ modules:
         path: ./moserial-patches/fixes-appstream-compose-failures.patch
     post-install:
       - install -Dm644 -T /app/share/applications/moserial.desktop "/app/share/applications/${FLATPAK_ID}.desktop"
-      - desktop-file-edit --set-key="Icon" --set-value="${FLATPAK_ID}" "/app/share/applications/${FLATPAK_ID}.desktop"
+      - desktop-file-edit --set-icon=${FLATPAK_ID} "/app/share/applications/${FLATPAK_ID}.desktop"
       - install -Dm644 -T /app/share/icons/hicolor/scalable/apps/moserial.svg "/app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg"
